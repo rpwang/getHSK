@@ -1,0 +1,55 @@
+body, html {
+    margin: 1em 0 4em 0;;
+    padding:0;
+	font:16px/1.5em "Helvetica Neue", Helvetica, sans-serif;
+	display: block;
+	margin-top: 8px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 40px;
+}
+ 
+h2 {
+    font-size: 30px;
+    line-height: 40px;
+}
+ 
+h3 {
+    font-size: 24px;
+    line-height: 40px;
+}
+ 
+h4 {
+    font-size: 18px;
+    line-height: 20px;
+}
+ 
+/* Won't be used here */
+ 
+h5 {
+    font-size: 14px;
+    line-height: 20px;
+}
+ 
+h6 {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.column-960{
+	margin:auto;
+	width: 720px;
+	padding-right:240px;
+	position:relative;
+}
+
+.nav{
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    p
