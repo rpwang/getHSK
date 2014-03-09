@@ -54,15 +54,6 @@ $( document ).ready(function() {
 		//console.log(keyArray)
 		var shuffle_keyArray = shuffleArray(keyArray)
 		return shuffle_keyArray;
-		//console.log(shuffle_keyArray)
-		//endless loop
-	
-		//pop loop
-		
-		//check the lowest value in key repeats and put in another array.
-		//from that array 
-		//for i in keyArray.length
-		//alert(keyArray[1].repeats);
 	}
 	var shuffle_keyArray = pickItemFromJson(ajaxobject);
 
@@ -82,22 +73,22 @@ $( document ).ready(function() {
 		var han = hanzi.replace(/"/g,''); //"[apple,orange,pear]")
 		
 		if (han.length === 1){
-			context.font = "bold 300px arial";
+			context.font = "300px arial";
 			context.fillStyle = "#B32C2C";
 			context.fillText(han,95, 350);
 		}
 		else if (han.length === 2){
-			context.font = "bold 240px arial";
+			context.font = "240px arial";
 			context.fillStyle = "#B32C2C";
 			context.fillText(han,10, 350);
 		}
 		else if (han.length === 3){
-			context.font = "bold 160px arial";
+			context.font = "160px arial";
 			context.fillStyle = "#B32C2C";
 			context.fillText(han,10, 350);
 		}
 		else{
-				context.font = "bold 120px arial";
+				context.font = "120px arial";
 				context.fillStyle = "#B32C2C";
 				context.fillText(han,10, 350);
 		}
@@ -119,3 +110,23 @@ $( document ).ready(function() {
 		update(shuffle_keyArray)
 		//remove
 		//add	
+	});
+	$( "button#show" ).click(function() {
+//		  $( "p.hide" ).first().show( "fast", function showNext() {
+//		    $( this ).next( "p.hide" ).show( "fast", showNext );
+//		  });
+		
+		if ( $( "p.hide" ).is( ":hidden" ) ) {
+	    $( "p.hide" ).slideDown( "slow" );
+	  } //else {
+	    //$( "p.hide" ).hide();
+	  //}
+	});
+	$( "button#hide" ).click(function() {
+		$( "p.hide" ).slideUp( "slow");
+	});
+	
+	
+
+
+});
