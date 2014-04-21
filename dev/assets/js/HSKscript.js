@@ -24,10 +24,12 @@ $( document ).ready(function() {
 	$( "#btn-mainsetting" ).click(function() {
 		//disapear/delete menu 1
 		//alert(mode)
-		var hsk1checkBoxBool = $(":checkbox[name=my-checkbox][id=hsk1]").prop('checked') 
-		console.log("check1 "+hsk1checkBoxBool)
+		var hsk1checkBoxBool = $(":checkbox[name=my-checkbox][id=hsk1]").prop('checked')
+		var hsk2checkBoxBool = $(":checkbox[name=my-checkbox][id=hsk2]").prop('checked')  
+		alert("check: "+hsk1checkBoxBool+hsk2checkBoxBool)
 		console.log($(":text[data-slider-id=hsk1DataSlider]").data('slider').getValue());
 	
+		
 		$( "div.jumbotron.mainsetting" ).remove();
 		//show menu 2
 	});
