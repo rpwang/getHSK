@@ -1,1 +1,0 @@
-Implementing framework durandal

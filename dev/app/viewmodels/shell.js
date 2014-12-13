@@ -9,8 +9,7 @@
         activate: function () {
             router.map([
                 { route: '', title:'Welcome', moduleId: 'viewmodels/welcome', nav: true },
-                { route: 'flickr', moduleId: 'viewmodels/flickr', nav: true },
-                { route: 'learnHSK', moduleId:'viewmodels/learnhsk',nav:false},
+                { route: 'learnHSK', moduleId:'viewmodels/learnhsk',nav:true},
                 { route: 'form', moduleId:'viewmodels/form',nav:true}
             ]).buildNavigationModel();
             

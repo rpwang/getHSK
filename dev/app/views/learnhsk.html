@@ -1,0 +1,19 @@
+﻿<section>
+	<div class="stage">
+		<canvas width="500px" height="500px"></canvas>
+	</div>
+	<div class="panel column-960">
+			<div class="button">
+				<button id="next" data-bind="click: nextClick">Next</button>
+				<button id="show" data-bind="click: showClick">show</button>
+				<button id="hide" data-bind="click: hideClick">hide</button>
+				<button id="pop" data-bind="click: popClick">pop</button>
+				<select data-bind="options: items,optionsText: 'title',value: selectedProperty, optionsCaption: 'Please select a property'" ></select><span id="title" data-bind="text: selectedProperty() ? selectedProperty().title : 'unknown'"></span>
+			</div>
+			<div class="translation">
+				<p class="pinyin"></p><p class="english "></p><p class="dutch "></p>
+			</div>
+		</div>
+	<!--	<select data-bind="options: items, optionsText: 'title', optionsValue: 'ref', value: selectedProperty(), optionsCaption: 'Please select a property'"></select>
+-->
+</section>
